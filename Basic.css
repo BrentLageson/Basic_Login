@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes failure {
+	0% {padding-left: 0px;}
+	25% {padding-left: 3px;}
+	50% {padding-left: 0px;}
+	75% {padding-left: 3px;}
+	100% {padding-left: 0px;}
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(Images/Background01.jpg);
+	background-size: auto;
+	background-position: top;
+	font-family: "sans-serif", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial;
+	
+}
+
+.loginBox{
+	width: 360px;
+	height: 420px;
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 70px 30px;
+		
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 26px;
+}
+
+.loginBox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginBox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.loginBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #333333;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #000000;
+}
+
+.loginBox a{
+	text-decoration: none;
+	text-size: 12px;
+	line-height: 20px;
+	color: #333333;
+}
+
+
+.loginFailure{
+	animation-name: failure;
+	animation-duration: .2s;
+	animation-iteration-count: 2;
+	color: red;
+	display: none;
+}
